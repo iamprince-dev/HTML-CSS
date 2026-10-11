@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-color: black;
+        }
+        header{
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+
+        }
+        nav span{
+            margin: 20px;
+            font-size: 19px;
+             font-weight:bold ;
+
+        }
+        .brand-name{
+            font-family:  Brush Script MT;
+            color: rgb(229, 45, 119);
+            font-size: 50px;
+             
+        }
+        .search-bar{
+            border: 1px solid white;
+            background-color: rgb(236, 235, 235);
+           padding: 13px;
+           width: 480px;
+           border-radius: 4px;
+           font-size: 20px;
+        
+
+            
+           text-align: center;
+        }
+        .placeholder{
+            padding-right: 180px;
+            color: grey;
+            
+              
+        }
+        .bi-search{
+            padding-right: 0px;
+
+        }
+       
+        .shortcut-item span{
+            
+                  display: block;
+                  text-align: center;
+        }
+         .shortcut{
+                display: flex;
+                flex-direction: row;
+                width: 220px;
+                margin-right: 40px;
+                justify-content: space-between;
+                font-size: 20px;
+        }
+
+       .shortcut-item-text{
+        font-weight: bold;
+       }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div>
+             <nav>
+                <span class="brand-name">M</span>
+                <span>MEN</span>
+                <span>WOMEN</span>
+                <span>KIDS</span>
+                <span>BEAUTY</span>
+                <span>HOME</span>
+                <span>STUDIO</span>
+             </nav>
+        </div>
+         <div class="search-bar">
+             <span class="bi bi-search"></span>
+             <span class="placeholder">search for brands and more</span>
+        </div>
+        <div class="shortcut">
+            <div class="shortcut-item">
+                <span class="bi bi-person"></span>
+                <span class="shortcut-item-text">Person</span>
+            </div>
+               <div class="shortcut-item">
+                <span class="bi bi-bag"></span>
+                <span class="shortcut-item-text">Bag</span>
+            </div>
+               <div class="shortcut-item">
+                <span class="bi bi-heart"></span>
+                <span class="shortcut-item-text">Heart</span>
+            </div>
+            
+        </div>
+       
+    </header>
+</body>
+</html>

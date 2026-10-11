@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./images/net.ico">
+    <style>
+        body{
+            background-image: url("../images/netflix.jpg");
+            background-size: cover;
+        }
+        .shade{
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: -10px;
+        }
+        header{
+            color: white;
+            padding: 40px 150px 40px 150px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: Arial;
+            align-items: center;
+        }
+        .brand-name{
+            font-size: 60px;
+            color: red;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px white;
+        }
+        .language{
+            border: 1px solid white;
+            padding: 10px;
+            width: 150px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 5px;
+            background-color: rgba(0,0,0, 0.6);
+        }
+        .btn-sign{
+            background-image: linear-gradient(red);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+            width: 80px;
+            margin-left: 20px;
+            font-size: 20px;
+             
+        }
+        .shortcuts{
+            display: flex;
+            flex-direction: row;
+        }
+        article{
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            font-family: arial;
+        }
+        .artical-title{
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .artical-subtitle{
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .main-title{
+            margin-bottom: 15px;
+        }
+        .email{
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border: 1px solid grey;
+            padding: 15px;
+            text-align: center;
+            color: grey;
+        }
+        .btn-start{
+            width: 150px;
+            background-image: linear-gradient(red,rgb(128, 0, 70));
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-left: 10px;
+
+        }
+        .form{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="shade">
+       <header>
+        <div>
+             <span class="brand-name">Netflix</span>
+        </div>
+         <div class="shortcuts">
+              <div class="language">
+                <span class="bi bi-translate">English</span>
+                
+                <span class="bi bi-caret-down-fill"></span>
+
+              </div>
+              <div class="btn-sign">
+                   Sign in
+              </div>
+        </div>
+       </header>
+        <article>
+            <div class="artical-title">Entertainment for <br>ervery moment</div>
+            <div class="artical-subtitle">Stsrts at 149. Cancel at any time.</div>
+            <main>
+                 <div class="main-title">
+                      Ready to watch ? Enter your email to create or restart your membership
+                 </div>
+                 <div class="form">
+                    <div class="email">Email Address</div>
+                    <div class="btn-start">Get started <span class="bi bi-chevron-right"></span></div>
+
+                 </div>
+            </main>
+        </article>
+    </div>
+</body>
+</html>

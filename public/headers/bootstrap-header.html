@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            background-color: rgb(146, 30, 240);
+            color: white;
+            padding: 10px;
+            font-family: arial;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .bi-bootstrap-fill{
+            font-size: 30px;
+        }
+        nav span{
+            margin: 20px;
+        }
+        .search-bar{
+            width: 250px;
+            background-color: rgb(77, 6, 149);
+            padding: 10px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 5px;
+            align-items: center;
+
+        }
+        .btn-cmd{
+            background-color: rgb(111, 89, 137);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .bi-command{
+            font-size: 14px;
+            font-size: 14px;
+        }
+        .quick-link{
+            display: flex;
+            flex-direction: row;
+        }
+        .quick-link span{
+            margin-right: 6px;
+        }
+        .bi-caret-down{
+            font-size: 12px;
+        }
+        aside{
+            border-right: 1px solid white;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+       <header>
+        <div>
+         <nav>
+             <span class="bi bi-bootstrap-fill"></span>
+             <span>Docs</span>
+             <span>Example</span>
+             <span>Icons</span>
+             <span>Blog</span>
+        </nav>
+        </div>
+        <div class="search-bar">
+            <span class="bi bi-search"> search</span>
+            <div class="btn-cmd">
+            <span class="bi bi-command"></span>
+            <span class="K">k</span>
+
+            </div>
+
+        </div>
+         <div class="quick-link">
+            <aside>
+                     
+             <span class="bi bi-github"></span>
+             <span class="bi bi-twitter-x"></span>
+             <span class="bi bi-opencollective"></span>
+
+            </aside>
+            <div class="shortcut">
+                   <span>v5.3 <span class="bi bi-caret-down-fill"></span></span> 
+                   <span><span class="bi bi-sun-fill"></span><span class="bi bi-caret-down-fill">
+            </div >
+        </div>
+       </header>
+</body>
+</html>

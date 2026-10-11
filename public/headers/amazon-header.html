@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            margin: 0px;
+            height: 1900px;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: blanchedalmond;
+            align-items: center;
+            padding: 10px;
+            color: white;
+            background-color: #131921;
+        }
+        .logo img{
+            width: 200px;
+            height: auto;
+            
+           
+        
+        
+        }
+        .flag img{
+            width: 25px;
+            height: 26px;
+            
+        }
+        .search-bar{
+            display: flex;
+            color: grey;
+        }
+        .items{
+            display: flex;
+             margin: px;
+        }
+        .bi-geo-alt,.update{
+            font-size: 21px;
+            padding-left: 2px;
+
+            
+        }
+        .bi-geo-alt{
+            font-size:  26px;
+        }
+        .search-bar{
+            border: 1px solid grey;
+            width: 650px;
+            padding: 15px;
+            justify-content: space-between;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .items span{
+            margin: 10px;
+
+            
+        }
+        .hello{
+            margin-right: 8px;
+        }
+        .account{
+            margin-right: 7px;
+            font-size: 19px;
+            font-weight: bold;
+        }
+        .flag{
+            font-weight: bold;
+            font-size: 19px;
+        }
+        .bi-cart3{
+            font-size: 20px;
+            font-weight: bold;
+         
+        
+        }
+       
+        .nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 20px;
+    background-color: #232f3e;
+    color: white;
+}
+
+.nav-bar span {
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.cart-text{
+    font-size: 15px;
+}
+section{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr ;
+}
+ section div{
+    height: 500px;
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgb(138, 134, 134);
+    border-radius: 20px;
+
+ }
+ .card-1{
+    background-color: rgb(73, 73, 208);
+ }
+ .card-2{
+    background-color: rgb(248, 128, 24);
+ }
+ .card-3{
+    background-color: rgb(241, 19, 100);
+ }
+ .card-4{
+    background-color: rgb(137, 241, 19);
+ }
+ .card-5{
+    background-color: rgb(241, 19, 208);
+ }
+ .card-6{
+    background-color: rgb(81, 247, 161);
+ }
+ .row-1{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 100px;
+    padding-top: 100px;
+
+
+ }
+ .row-1 span{
+    display: block;
+    margin-bottom: 14px;
+    font-family: arial;
+    
+ }
+ .row-1{
+    font-size: 18px;
+ }
+ .header{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(243, 238, 238);
+ }
+ footer{
+    background-color: #232f3e;
+    color: rgb(169, 164, 164);
+ }
+ .foot-logo img{
+    width: 200px;
+    height: auto;
+    align-items: center;
+    padding-top: 24px;
+    padding-right: 70px;
+ }
+ .india img{
+     width: 20px;
+        font-size: 17px;
+        align-items: center;
+        padding-right: 5px;
+        padding-top: 15px;
+ }
+ .row-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    border-top: 1px solid grey;
+    margin-bottom:50px;
+    height: 100px;
+ }
+     .eng-btn{
+        border: 1px solid grey;
+        padding: 10px;
+        text-align: center;
+        width: 350px;
+        border-radius: 5px;
+     }  
+     .india{
+        border: 1px solid grey;
+        padding: 10px;
+        text-align: center;
+        width: 350px;
+        margin-left: 20px;
+        align-items: center;
+        border-radius: 4px;
+     } 
+     
+     
+     .footer-1{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+
+
+        padding-top: 50px;
+        padding-bottom: 100px;
+     }
+     .footer-1 div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px
+        
+     }
+     .back-top {
+    text-align: center;
+    padding: 20px;
+    background-color: #37475a;
+    color: white;
+}
+.row-3{
+  background-color: #21252a;
+   padding-left: 200px;
+
+}
+.terms{
+    padding-left: 450px;
+    padding-bottom: 50px;
+    color: rgb(247, 240, 240);
+}
+.foot{
+    font-size: 20px;
+    color: rgb(232, 227, 227);
+}
+     
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            
+            <img src="..//images/amazon2.png" alt="Amazon">
+            <span class="bi bi-geo-alt"><span class="update"></span>Update location</span>
+        
+
+        </div>
+        <div class="search-bar">
+            <div class="btn-cmd">
+                <span>All</span>
+                <span class="bi bi-caret-down-fill"></span>
+            </div>
+              <span>search Amazon.in</span>
+              <span class="bi bi-search"></span>
+        </div>
+        <div class="items">
+
+                <span class="flag">
+                    <img src="..//images/Indian-Flag.png" alt="">
+                    EN
+                    <span class="bi bi-caret-down-fill"></span>
+                </span>
+
+                <div class="hello">Hello,sign in <div class="account">Account & Lists</div>
+                 </div>
+
+                <div class="return">Return <div class="account">& Orders</div>
+                  </div>
+
+                <span class="bi bi-cart3">
+                  <span class="cart-text">Cart</span>
+                </span>
+
+        </div>
+    </header>
+    <nav class="nav-bar">
+    <span class="bi bi-list"> All</span>
+    <span>Fresh</span>
+    <span>MX Player</span>
+    <span>Sell</span>
+    <span>Best Sellers</span>
+    <span>Today's Deals</span>
+    <span>Mobiles</span>
+    <span>Prime</span>
+    <span>Customer Service</span>
+    <span>Fashion</span>
+    <span>New Releases</span>
+    <span>Amazon Pay</span>
+</nav>
+
+      <section>
+        <div class="card-1">
+          Earn upto  <br>&#8377;150 cashback*  
+        </div>
+
+        <div class="card-2">
+            Earn upto <br> &#8377;150 cashback*
+        </div>
+
+        <div class="card-3">
+            Earn upto <br> &#8377;150 cashback*
+
+        </div>
+
+        <div class="card-4">
+            Earn upto <br>&#8377;150 cashback*
+        </div>
+
+        <div class=" card-5">
+          Earn upto <br>&#8377;150 cashback*  
+
+        </div>
+             
+
+          <div class="card-6"> 
+                Earn upto <br> &#8377;150 cashback*
+            </div>
+       
+      </section>
+
+      <footer>
+                  <div class="back-top">
+                        Back to top
+                     </div>
+
+
+          <div class="row-1">
+            <div class="col-1">
+                <span class="header">Get to <br>Know Us</span>
+                <span>About Amazon</span>
+                <span>carrers</span>
+                <span>press rleases</span>
+                <span>Amazon science</span>
+            
+
+            </div>
+            <div class="col-2">
+                <span class="header">Connect with Us</span>
+                <span>Facebook</span>
+                <span>twitter</span>
+                <span>Instagram</span>
+                
+
+            </div>
+            <div class="col3">
+                <span class="header">Make Money with Us</span>
+                <span>Sell on Amazon</span>
+                <span>Sell under Amazon Accelerator</span>
+                <span>Protect and Build Your Brand</span>
+                <span>Amazon Global Selling</span>
+                <span>Supply to Amazon</span>
+                 <span>Become an Affiliate</span>
+                 <span>Fulfilment by Amazon</span>
+                 <span>Advertise Your Products</span>
+                 <span>Amazon Pay on Merchants</span>
+            </div>
+            <div class="col-4">
+                <span class="header">Let Us Help You</span>
+                <span>Your Account</span>
+                <span>Returns Centre</span>
+                <span>Recalls and Product Safety <br> Alerts</span>
+                <span>100% Purchase Protection</span>
+                <span>Amazon App Download</span>
+                <span>help</span>
+
+
+            </div>
+
+         </div>
+
+         <div class="row-2">
+            <div class="foot-logo">
+                <img src="..//images/amazon2.png" alt="">
+            </div>
+            <div class="eng-ind">
+                <span class="eng-btn">
+                    <span class="bi bi-globe"></span>
+                    Emglish
+                    <span class="bi bi-caret-down-fill"></span>
+                </span>
+                <span class=" india">
+                    <img src="..//images/Indian-Flag.png" alt="">
+                    india
+                </span>
+            </div>
+
+         </div>
+
+         <div class="row-3">
+             <div class="footer-1">
+               <div>
+                  <span class="foot">AbeBooks</span>
+                  <span> Books, arts</span>
+                  <span>&collection</span>
+                
+               </div>
+              <div>
+                <span class="foot">Amazon Web Services</span>
+                <span>Scalable Cloud</span>
+                <span>Computing Services</span>
+
+               </div>
+             <div>
+                <span class="foot">Audible</span>
+                <span>download</span>
+                <span>Audio book</span>
+
+              </div>
+               <div>
+                <span class="foot">IMDb</span>
+                <span>Movies, TV</span>
+                <span>& Celebrities</span>
+
+              </div>
+               <div>
+                <span class="foot">Shopbop</span>
+                <span>Designer</span>
+                <span>ashion Brands</span>
+
+               </div>
+               <div>
+                <span class="foot">Amazon Business</span>
+                <span>Your Business</span>
+                <span>Everything For</span>
+
+               </div>
+                
+          
+            </div>
+
+            <div class="terms">
+
+             <span>Conditions of Use</span>
+             <span>Privacy Notice</span>
+             <span>Your Ads Privacy Choices</span>
+
+             <div>1996-2026, Amazon.com, Inc. or its affiliates</div>
+
+            
+         </div>
+        
+
+         
+      </footer>
+</body>
+</html>

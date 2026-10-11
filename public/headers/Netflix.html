@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../images/net.ico">
+    <style>
+        body{
+            background-image: url("../images/netflix.jpg");
+            
+        
+        }
+        .shade{
+            background-color: rgba(0,0,0,.9);
+            
+            margin: -10px;
+        
+        }
+        header{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 40px 150px 40px 150px;
+            font-family: arial;
+            text-align: center;
+
+        }
+        .brand-name{
+            font-size: 66px;
+            color: red;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px  rgb(20, 20, 20);
+
+        
+        }
+
+            
+        
+        .shortcuts{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+        .english{
+            border: 1px solid rgb(71, 68, 68);
+            padding: 10px ;
+            font-size: 20px;
+            margin-right: 5px;
+            width: 150px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(0,0,0, 0.7);
+            color: white;
+        
+            
+        }
+        .sign-btn{
+            border: 1px solid rgb(236, 17, 17);
+            padding: 10px ;
+            font-size: 20px;
+            margin-left: 5px;
+            background-color: red;
+            width: 80px;
+            text-align: center;
+            border-radius: 10px;
+        }
+          article{
+            color: white;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin: 100px;
+            font-family: arial;
+            
+            
+          }
+          .article-title{
+            font-size: 80px;
+            text-align: center;
+            text-shadow: 1px 1px 1px  white;
+            font-weight: bold;
+
+          }
+          .article-subtitle{
+            font-size: 30px;
+            
+          }
+          main{
+            display: flex;
+            flex-direction: row;
+            margin-top: 40px;
+            align-items: center;
+
+            
+          }
+          .email{
+            border: 1px solid rgb(118, 113, 113);
+            padding: 24px;
+            font-size: 20px;
+            width: 420px;
+            text-align: center;
+            background-color: rgba(0,0,0, 0.7);
+            color: grey;
+            border-radius: 5px;
+    
+            
+          }
+          .get-ready{
+            border: 1px solid grey;
+            font-size: 28px;
+            padding:20px ;
+            background-image: linear-gradient(red, rgb(219, 33, 191));
+            width: 250px;
+            margin-left: 10px;
+            font-weight: bold;
+
+
+          }
+          .member{
+            margin-top: 30px;
+            width: 700px;
+            font-size: 24px;
+          }
+          .address{
+            padding-right: 280px;
+            color: rgb(183, 187, 190);
+            
+          }
+          .faqs{
+            color: white;
+            padding-left: 190px;
+            padding-right: 200px;
+            margin-top: 40px;
+            font-family: arial;
+
+          }
+          .faqs-title{
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: bold;
+          }
+          .question{
+            border: 1px solid grey;
+            margin-bottom: 15px;
+            padding: 25px;
+            width: 1340px;
+            display: flex;
+            justify-content: space-between;
+           font-size: 25px;
+            background-color:  rgb(57, 55, 55);
+          }
+          .main-two{
+            padding-left: 400px;
+            padding-right: 400px;
+            margin-top: 40px;
+          }
+          .email-two{
+             border: 1px solid rgb(118, 113, 113);
+            padding: 24px;
+            font-size: 20px;
+            width: 630px;
+            text-align: center;
+            background-color: rgba(0,0,0, 0.7);
+            color: grey;
+          }
+          .member-two{
+            color: white;
+            padding-left: 600px;
+            padding-right: 400px;
+            margin-top: 100px;
+            font-weight: bold;
+            font-size: 20px;
+          }
+          footer{
+            margin-top: 100px;
+            color: rgb(157, 149, 149);
+            padding-left: 200px;
+            padding-right: 100px;
+            font-size: 22px;
+            background-color: rgb(14, 13, 13);
+            padding-top: 100px;
+            padding-bottom: 100px;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-bottom: -10px;
+
+            
+
+          }
+          .row-1{
+            margin-bottom: 20px;
+            text-decoration: underline;
+          }
+          .row-2{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-bottom: 50px;
+            font-size: 19px;
+            text-decoration: underline;
+        
+          }
+          .row-2 span{
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+          .row-3{
+            margin-bottom: 50px;
+          }
+          .row-4{
+            margin-bottom: 50px;
+            font-size: 20px;
+          }
+          .row-5{
+        
+            font-size: 14px;
+          }
+
+          .trending{
+            color: white;
+            padding-left: 200px;
+            padding-right: 200px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-family: arial;
+
+          }
+          .trending-title{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            
+          }
+          .trend-card{
+            width: 250px;
+            border: 1px solid rgb(45, 43, 43);
+            height: 280px;
+            box-shadow: 1px 1px 1px rgb(35, 34, 34);
+            margin: 15px;
+            position: relative;
+            border-radius: 10px;
+          }
+          .trend-container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            
+          }
+          .pic-1{
+            background-image: url(../images/card-1.avif);
+            background-size: cover;
+          }
+
+          .pic-2{
+            background-image: url(../images/card-2.jpg);
+            background-size: cover;
+          }
+
+          .pic-3{
+            background-image: url(../images/card-3.avif);
+            background-size: cover;
+          }
+
+          .pic-4{
+            background-image: url(../images/card-4.jpg);
+            background-size: cover;
+          }
+
+          .pic-5{
+            background-image: url(../images/card-5.avif);
+            background-size: cover;
+          }
+           
+
+          .number{font-size: 110px;
+            color:black;
+            font-family: arail;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px white;
+            position: absolute;
+            bottom: 15px;
+            left: -15px;
+
+
+
+          }
+
+    .resion-card{
+        width: 300px;
+        height: 350px;
+        padding: 15px;
+        background-image: linear-gradient(rgb(2, 2, 39), rgb(60, 1, 26));
+        border-radius: 15px;
+        font-family: arial;
+    }
+    .resion img{
+        width: 70px;
+        height:70px ;
+        text-align: end;
+        
+    }
+    .resion-body-title{
+        font-size: 34px;
+        margin-bottom: 20px;
+        color: white;
+        padding-left: 15px;
+        margin-top: 15px;
+    }
+    .resion-subtitle{
+
+        font-size: 20px;
+        margin-bottom: 20;
+        color: rgb(185, 179, 179);
+        padding-left: 15px;
+        margin-top: 30px;
+    }
+    .icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
+        height: 165px;
+    }
+
+    .icon-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
+        height: 110px;
+    }
+
+    .icon-3{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
+        height: 185px;
+    }
+
+    .icon-4{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: end;
+        height: 130px;
+    }
+    .resion-title{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: white;
+        margin-top: 80px;
+    }
+    .resion{
+      padding-left: 150px;
+      padding-right: 100px;
+      margin: 30px;
+      font-family: arial;
+    }
+     .resion-container{
+      display: grid;
+      grid-template-columns: 3fr 3fr 3fr 3fr;
+    
+     }
+        
+    </style>
+</head>
+<body>
+    <div class="shade">
+      <header>
+        <div class="brand-name">Netflix  </div>
+        <div class="shortcuts">
+               <div class="english">
+                <span class="bi bi-translate">English</span>
+                <span class="bi bi-caret-down-fill"></span>
+              </div>
+            
+            <div class="sign-btn"> Sign in</div>
+
+        </div>
+      </header>
+       <article>
+              <div class="article-title">Entertainment for <br>every movement</div>
+              <div class="article-subtitle">Starts at 149. Cancel at any time.</div>
+              <div class="member">Ready to watch ? Enter your email to create or restart your membership
+                 </div>
+              <main>
+                <div class="email"><span class="address">Email Address</span></div>
+                <div class="get-ready">Get Started <span class="bi bi bi-chevron-right"></span></div>
+              </main>
+
+      </article>
+
+         <section class="trending">
+            <div class="trending-title">Trending Now</div>
+               <div class="trend-container">
+
+                 <div class="trend-card pic-1">
+                  <div class="number">1</div>
+                  </div>
+
+                <div class="trend-card pic-2">
+                  <div class="number">2</div>
+                 </div>
+
+                <div class="trend-card pic-3">
+                  <div class="number">3</div>
+                </div>
+
+                <div class="trend-card pic-4">
+                  <div class="number">4</div>
+                </div>
+
+                <div class="trend-card pic-5">
+                 <div class="number">5</div>
+                </div>
+
+                
+
+
+              </div> 
+            </div>
+          
+
+        </section>    
+        
+        
+           
+      <section class="resion">
+
+         <div class="resion-title">  More resions to join</div>
+
+         <div class="resion-container">
+
+         <div class="resion-card">
+
+            <div class="resion-body-title">
+                Enjoy on your TV
+            </div>
+
+            <div class="resion-subtitle">
+                  Watch on smart TVs, <br>
+                   PlayStation, Xbox, Chromecast, <br>
+                    Apple TV, Blu-ray players and <br>
+                     more.
+            </div>
+
+            <div class="icon">
+                <img src="../images/tv_illustration.png" alt="">
+
+            </div>
+         </div>
+
+           <div class="resion-card">
+
+            <div class="resion-body-title">
+                Download your shows to watch offline
+
+            </div>
+
+            <div class="resion-subtitle">
+                Save your favourites easily and always have something to watch.
+
+            </div>
+
+            <div class="icon-2">
+                <img src="../images/download_icon.png" alt="">
+
+            </div>
+         </div>
+
+              <div class="resion-card">
+
+            <div class="resion-body-title">
+                Watch everywhere
+            </div>
+
+            <div class="resion-subtitle">
+                 Stream unlimited movies and TV 
+                  shows on your phone, tablet, 
+                  laptop, and TV.
+
+
+            </div>
+
+            <div class="icon-3">
+                <img src="../images/telescope_icon.png" alt="">
+
+            </div>
+           </div>
+
+
+             <div class="resion-card">
+
+            <div class="resion-body-title">
+                Create profiles for kids
+            </div>
+
+            <div class="resion-subtitle">
+                 Send kids on adventures with their favourite characters in a space made just for them — free with your membership
+            </div>
+
+            <div class="icon-4">
+                <img src="../images/Kids-icon.png" alt="">
+
+            </div>
+        </div>
+
+        </div>
+
+
+        
+
+      </section>
+
+      <section class="faqs">
+                
+             <div class="faqs-title">Frequently Asked Questions</div>
+
+             <div class="question">
+                <span>What is Netflix</span>
+                <span class="bi bi-plus"></span>
+             </div>
+             <div class="question">
+                <span>How much Netflix does cost?</span>
+                <span class="bi bi-plus"></span>
+
+             </div>
+             <div class="question">
+                <span>Where can i watch?</span>
+                <span class="bi bi-plus"></span>
+
+             </div>
+             <div class="question">
+                <span>How do i Cancel?</span>
+                <span class="bi bi-plus"></span>
+
+             </div>
+              <div class="question">
+                <span>What can i watch in netflix?</span>
+                <span class="bi bi-plus"></span>
+
+             </div>
+               <div class="question">
+                <span>Is good for kids?</span>
+                <span class="bi bi-plus"></span>
+
+             </div>
+
+        </section>
+              <div class="member-two">Ready to watch ? Enter your email to create or restart your membership
+                 </div>
+
+             <main class="main-two">
+                <div class="email-two"><span class="address">Email Address</span></div>
+                <div class="get-ready">Get Started <span class="bi bi bi-chevron-right"></span></div>
+              </main>
+
+      <footer>
+                <div class="row-1">
+                <address>
+               Questions? Call 000-800-919-1743
+
+               </address>
+           </div>
+
+
+           <div class="row-2">
+               <div>
+                <span> Faqs</span>
+                <span>Investor Relations</span>
+                <span>Privacy</span>
+                <span>speed text</span>
+            </div>
+
+                <div>
+                    <span>Help Center</span>
+
+                    <span>Jobs</span>
+
+                    <span>Cookie Preferences</span>
+
+                    <span>Legal Notices</span>
+
+
+                </div>
+
+                <div>
+                      <span>Account</span>
+
+                    <span>Ways to Watch</span>
+
+                    <span>Corporate Information</span>
+
+                    <span>Only On Netflix</span>
+
+                </div>
+
+                <div>
+                      <span>Account</span>
+
+                    <span>Ways to Watch</span>
+
+                    <span>Corporate Information</span>
+
+                    <span>Only On Netflix</span>
+
+                </div>
+
+           </div>
+
+           <div class="row-3">
+
+            <div class="english">
+            <span class="bi bi-translate"></span>
+            <span>English</span>
+            <span class="bi bi-caret-down-fill"></span>
+            </div>
+            </div>
+
+           <div class="row-4">Netflix India</div>
+           <div class="row-5"> This page is protected by Google reCAPTCHA to ensure you're not a bot. </div>
+          
+      </footer>
+     </div>
+     
+</body>
+</html>
