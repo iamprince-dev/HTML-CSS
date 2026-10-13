@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    .card{
+        width: 250px;
+        height: 300px;
+        margin: 20px;
+        font-size: 20px;
+        border-radius: 1px solid grey;
+        display: none;
+    }
+    .card img{
+        width: 100%;
+
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        justify-content: space-around;
+
+
+    }
+    nav{
+        
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav span{
+        background-color: rgb(153, 236, 208);
+        margin: 15px;
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    .card:target{
+
+        background-color: rgb(226, 159, 159);
+        display: block;
+        width: 350px;
+        box-shadow: 2px 2px 3px rgb(16, 12, 12);
+        padding: 20px;
+        border-radius: 15px;
+        
+
+    }
+</style>
+</head>
+<body>
+
+    <nav>
+        <span><a href="#datascience">DAta Science</a></span>
+        <span><a href="#python">Python</a></span>
+        <span><a href="#forward">Forward</a></span>
+        <span><a href="#cybersecurity">Cyber Security</a></span>
+    </nav>
+
+    <section>
+
+        <div class="card" id="datascience">
+
+            <div class="card-header">
+                <img src="../images/data-science.png" alt="">
+            </div>
+
+            <div class="card-body">
+
+                <ol>
+                    <li>date 12 oct 2026</li>
+                    <li>by kishan sir</li>
+                    <li>duration 3 months</li>
+                </ol>
+
+            </div>
+
+        </div>
+
+
+
+           <div class="card" id="python">
+
+            <div class="card-header">
+                <img src="../images/Python.png" alt="">
+            </div>
+
+            <div class="card-body">
+
+                <ol>
+                    <li>date 12 oct 2026</li>
+                    <li>by kishan sir</li>
+                    <li>duration 3 months</li>
+                </ol>
+
+            </div>
+
+        </div>
+
+
+
+          <div class="card" id="forward">
+
+            <div class="card-header">
+                <img src="../images/powere.png" alt="">
+            </div>
+
+            <div class="card-body">
+
+                <ol>
+                    <li>date 12 oct 2026</li>
+                    <li>by kishan sir</li>
+                    <li>duration 3 months</li>
+                </ol>
+
+            </div>
+
+        </div>
+
+
+
+          <div class="card" id="cybersecurity">
+
+            <div class="card-header">
+                <img src="../images/cyber-security.jpg" alt="">
+            </div>
+
+            <div class="card-body">
+
+                <ol>
+                    <li>date 12 oct 2026</li>
+                    <li>by kishan sir</li>
+                    <li>duration 3 months</li>
+                </ol>
+
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
