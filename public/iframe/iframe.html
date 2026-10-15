@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 1fr 5fr 6fr;
+            margin-top: 100px;
+            font-family: arial;
+        }
+
+        nav div {
+            margin-bottom: 25px;
+            width: 100px;
+            border: 1px solid grey;
+            height: 100px;
+        }
+
+        iframe {
+            border: none;
+        }
+
+        nav div :hover {
+            border: 1px solid rgb(37, 88, 217);
+        }
+        .content-title{
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+        .sub-title{
+            color: rgb(75, 155, 234);
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .bi-star-fill{
+            color: goldenrod;
+            margin-bottom: 15px;
+        }
+        .sixty{
+            color: rgb(52, 113, 243);
+            
+        }
+        .bought-bold{
+            font-size: 18px;
+            font-weight: bold;
+            
+        }
+        .bought{
+            margin-top: 18px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid grey;
+            padding-bottom: 10px;
+        }
+        
+        nav img {
+            border: none;
+         }
+         .price{
+            font-size: 35px;
+            font-size: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+         }
+         .red{
+            font-size: 30px;
+            color: rgb(164, 12, 12);
+         }
+         sup{
+            font-size: 20px;
+         }
+         .discount{
+            color: grey;
+            margin-bottom: 15px;
+         }
+         .emi-bold{
+            font-weight: bold;
+            font-size: 20px;
+         }
+         .option{
+            color: rgb(41, 104, 230);
+         }
+         .emi{
+            margin-top: 5px;
+         }
+    </style>
+</head>
+
+
+<body>
+
+    <nav>
+
+        <div class="img-1">
+            <a href="../images/img-11.png" target="view"> <img class="pic" src="../images/img-1.png" alt=""
+                    width="100px" height="100px"> </a>
+        </div>
+
+        <div class="img-2">
+            <a href="../images/img-22.png" target="view"> <img class="pic" src="../images/img-3.png" alt=""
+                    width="100px" height="100px"> </a>
+        </div>
+
+        <div class="img-3">
+            <a href="../images/img-33.png" target="view"> <img class="pic" src="../images/img2.png" alt="" width="100px"
+                    height="100px"></a>
+        </div>
+
+        <div class="img-4">
+            <a href="../images/img-44.png" target="view"> <img class="pic" src="../images/img-4.png" alt=""
+                    width="100px" height="100px"></a>
+        </div>
+    </nav>
+
+
+
+    <section>
+
+        <iframe src="" width="600px" height="700px" name="view"></iframe>
+    </section>
+
+
+    <section>
+        <div class="content">
+
+            <div class="content-title">
+
+                Nothing Phone (4b) 5G (White, 8GB RAM, 128GB <br> Storage)  | Snapdragon 6 Gen 4 Octa-Core Processor | <br> 50MP +
+                8MP Dual Rear Camera | 16MP Front Camera | <br> 6.77-inch AMOLED Display | 6000mAh Battery |
+            </div>
+            <div class="sub-title">
+                Visite the Nothing Store
+            </div>
+
+            <div class="rating">
+                <span>3.9</span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star"></span>
+                <span class="sixty">(60)</span>
+            </div>
+
+            <div class="bought">
+                <span class="bought-bold">1k+ Bought </span>
+                <span>in past month</span>
+            </div>
+
+            <div class="price">
+                <span class="red">-44%</span>
+                <span> <sup>&#8377</sup> 31,107</span>
+            </div>
+
+            <div class="discount">
+
+                <span>M.R.P:  <span><del>&#8377 54,999</del></span></span>
+            </div>
+
+            <div class="includes">
+              Includes of all taxes
+            </div>
+
+            <div class="emi">
+                <span class="emi-bold">EMI</span>
+                <span>starts at ₹1,090. No Cost EMI available</span>
+                <span class="option">EMI options</span>
+                <span class="bi bi-chevron-down"></span>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
