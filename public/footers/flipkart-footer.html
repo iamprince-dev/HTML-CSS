@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <title>Flikart</title>
     <style>
+        body{
+            font-family: arial;
+        }
         section{
             display: grid;
             grid-template-columns: 3fr 3fr 3fr 3fr;
@@ -186,27 +189,49 @@
             align-items: center;
             padding: 15px;
             margin-left: -48px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         
         .flipkart-logo img{
-            width: 120px;
-             margin-bottom: -10px;
+            width: 155px;
+             margin-bottom: -20px;
             border-radius: 10px;
-            height: 50px;
+            height: 55px;
         }
         .aircraft img{
-            width: 35px;
-            height: 25px;
-            padding-right: 5px;
+            width: 50px;
+            height: 30px;
+            padding-right: 3px;
+            margin-bottom: -4px;
+        }
+        .aircraft{
+            border: 1px solid rgb(232, 231, 231);
+            padding: 18px 30px 18px 25px;
+            background-color: rgb(232, 231, 231);
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            
+            
+            
         }
         .grocery img{
             width: 35px;
             height: 25px;
             padding-right: 5px;
+            margin-bottom: -3px;
+            
+        }
+        .grocery{
+            border: 1px solid rgb(232, 231, 231);
+            padding: 18px 30px 18px 25px;
+            background-color: rgb(232, 231, 231);
+            border-radius: 15px;
+            font-size: 15px;
+            font-weight: bold;
         }
         .logo span{
-            margin: 20px;
+            margin: 10px;
         }
         .logo{
             font-size: 25px;
@@ -247,6 +272,10 @@
             color: rgb(98, 96, 96);
             border-radius: 15px;
             margin-left: -15px;
+            
+        }
+        .search-text{
+            margin-left: 15px;
         }
         .icons div{
             margin: 15px;
@@ -257,14 +286,58 @@
 
         }
         .nav-bar{
-            margin-top: 50px;
+            margin-top: 2px;
             border-bottom: 1px solid grey;
-            padding-bottom: 15px;
+            padding-bottom: 4px;
             color: rgb(77, 75, 75);
-        }
-        
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+            
 
-        
+        }
+        .nav-bar span {
+            display: block;
+        } 
+        .spot-card-1{
+            height: 300px;
+            width: 300px;
+        } 
+        .spot-header{
+            width: 300px;
+        }
+        .spot-header img{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .spot-footer{
+            color: white;
+            background-color: rgb(178, 48, 229);
+            padding: 8px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            font-size: 18px;
+        }    
+        .spot-cards{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 1580px;
+
+        }
+        .spotlights{
+
+            padding-left: 90px;
+            padding-right: 100px;
+        }
+        .spotlights-title{
+            font-size: 30px;
+            margin-top: 20;
+            margin-bottom: 20px;
+            font-weight: bold;
+            padding-left: 15px;
+        }
     </style>
 </head>
 <body>
@@ -280,7 +353,7 @@
             <div class="location">
                 <span class="bi bi-geo-alt"></span>
                  <span >500084</span>
-                 <span class="location-text">Select delivery location <span class="bi bi-caret-right"></span></span>
+                 <span class="location-text">Select delivery location <span class="bi bi-chevron-down"></span></span>
             </div>
           </div>
 
@@ -289,7 +362,7 @@
 
               <div class="search-bar">
 
-                <span class="bi bi-search">Search for products brands and more</span>
+                <span class="bi bi-search"><span class="search-text">Search for products brands and more</span></span>
 
               </div>
 
@@ -303,7 +376,7 @@
 
                    <div class="more">
                     <span>more</span>
-                    <span class="bi bi-chevrondown"></span>
+                    <span class="bi bi-chevron-down"></span>
                   </div>
 
 
@@ -317,20 +390,80 @@
           </div>
 
        <nav class="nav-bar">
-             <span> For You</span>
-             <span>Fashion</span>
-             <span>Mobiles</span>
-             <span>Electronics</span>
-             <span>Beauty</span>
-             <span>Home</span>
-             <span>applications</span>
-             <span>toys, ba..</span>
-             <span>Food & H..</span>
-             <span>Auto,Acc...</span>
-             <span>Sports &...</span>
-             <span>Furniture</span>
-             <span>Books</span>
-             <span>2 Wheels..</span>
+              <div>
+                <span> <img src="../images/bag.svg" width="40px" height="40px" alt=""></span>
+                <span>For You</span>
+              </div>
+                <div>
+                <span> <img src="../images/fashion (1).svg" width="40px" height="40px" alt=""></span>
+                <span>Fashion</span>
+              </div>
+
+
+                <div>
+                    <span> <img src="../images/mobiles.svg" width="40px" height="40px" alt=""></span>
+                    <span>Mobiles</span>
+                </div>
+
+                <div>
+                    <span> <img src="../images/electronics.svg" width="40px" height="40px" alt=""></span>
+                    <span>Electronics</span>
+                </div>
+
+
+                <div>
+                    <span> <img src="../images/beauty.svg" width="40px" height="40px" alt=""></span>
+                    <span>Beauty</span>
+                </div>
+
+                <div>
+                    <span> <img src="../images/home.svg" width="40px" height="40px" alt=""></span>
+                    <span>Home</span>
+                </div>
+
+                <div>
+                    <span> <img src="../images/tv.svg" width="40px" height="40px" alt=""></span>
+                    <span>Appliances</span>
+                </div>
+
+                <div>
+                    <span> <img src="../images/toy.svg" width="40px" height="40px" alt=""></span>
+                    <span>Toys, Ba...</span>
+                </div>
+
+                <div>
+                    <span> <img src="../images/food.svg" width="40px" height="40px" alt=""></span>
+                    <span>Food & M...</span>
+                </div>
+
+                <div>
+                    <span> <img src="../images/auto-acc.svg" width="40px" height="40px" alt=""></span>
+                    <span>Auto, Acc...</span>
+                </div>
+
+                <div>
+                    <span> <img src="../images/sport.svg" width="40px" height="40px" alt=""></span>
+                    <span>Sports &...</span>
+                </div>
+
+                <div>
+                    <span> <img src="../images/furniture.svg" width="40px" height="40px" alt=""></span>
+                    <span>Furniture</span>
+                </div>
+
+
+                <div>
+                    <span> <img src="../images/books.svg" width="40px" height="40px" alt=""></span>
+                    <span>Books</span>
+                </div>
+
+                <div>
+                    <span> <img src="../images/auto.svg" width="40px" height="40px" alt=""></span>
+                    <span>2 Wheel...</span>
+                </div>
+
+
+             
        </nav>
 
 
@@ -438,25 +571,68 @@
        </section>
 
 
-     <section>
-        
-        <div class="card card-1">
-            
-               <div class="card-title">Earn upto &#8377;150 cashback*</div>
-        </div>
-        <div class="card card-2 ">
-            <div class="card-title">Min 70% off on speakers</div>
+        <section>
+          <div class="spotlights">
 
-        </div>
-        <div class="card card-3">
-             <div class="card-title">Under &#8377;499 Bath essentials*</div>
-        </div>
-        <div class=" card card-4">
-            <div class="card-title">Under &#8377;999 accessories*</div>
+            <div class="spotlights-title">In The Spotlight</div>
 
-        </div>
-        
+            <div class="spot-cards">
+
+                <div class="spot-card-1">
+                    <div class="spot-header">
+                         <img src="../images/nothing4a.webp" width="100%" height="200px" alt="">
+                    </div>
+                    <div class="spot-footer">
+                        <span>From &#8377;42,999</span>
+                    </div>
+                </div>
+
+
+                 <div class="spot-card-1">
+                    <div class="spot-header">
+                         <img src="../images/denever2.webp" width="100%" height="200px" alt="">
+                    </div>
+                    <div class="spot-footer">
+                        <span>Up to 50% off</span>
+                    </div>
+                </div>
+
+
+                 <div class="spot-card-1">
+                    <div class="spot-header">
+                         <img src="../images/oppok.webp" width="100%" height="200px" alt="">
+                    </div>
+                    <div class="spot-footer">
+                        <span>From &#8377;17,999</span>
+                    </div>
+                </div>
+
+
+
+                 <div class="spot-card-1">
+                    <div class="spot-header">
+                         <img src="../images/img-motorola-1.webp" width="100%" height="200px" alt="">
+                    </div>
+                    <div class="spot-footer">
+                        <span>From &#8377;36,999</span>
+                    </div>
+                </div>
+
+
+                 <div class="spot-card-1">
+                    <div class="spot-header">
+                         <img src="../images/wildstone2.webp" width="100%" height="200px" alt="">
+                    </div>
+                    <div class="spot-footer">
+                        <span>Up to 60% off</span>
+                    </div>
+                </div>
+            </div>
+
+          </div>
      </section>
+
+
      <footer>
               
         <div class="left-footer">
