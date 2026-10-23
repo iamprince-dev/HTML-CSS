@@ -37,7 +37,7 @@
         .card-4{
             background-color: rgb(61, 117, 6);
         }
-        footer{
+        .footer-main{
             background-color: rgb(31, 29, 29);
             display: grid;
             grid-template-columns: 6fr 6fr;
@@ -45,10 +45,10 @@
             padding-left: 100px;
             padding-right: 100px;
             padding-top: 50px;
-            padding-bottom: 50px;
-        
-        
-            
+            padding-bottom: 50px; 
+        }
+        footer{
+            background-color: rgb(31, 29, 29);
         }
         .left-footer{
             display: grid;
@@ -337,6 +337,21 @@
             margin-bottom: 20px;
             font-weight: bold;
             padding-left: 15px;
+        }
+        .down-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top:10px;
+            padding-bottom: 10px;
+            border-top: 1px solid white;
+            color:white;
+            width: 1600px;
+            padding-left: 100px;
+            padding-right: 100px;
+            height: 60px;
+            
         }
     </style>
 </head>
@@ -634,6 +649,8 @@
 
 
      <footer>
+
+        <div class="footer-main">
               
         <div class="left-footer">
             <div class="col-1">
@@ -713,6 +730,60 @@
                </div>
 
         </div>
+
+        </div>
+
+
+        <section> 
+          
+        <div class="down-footer">
+
+           <div>
+                <span class="bi bi-gift"></span>
+                <span>Become a seller</span>
+            </div>
+            <div>
+                <span class="bi bi-star"></span>
+                <span>Advertise</span>
+            </div>
+
+             <div>
+                <span class="bi bi-gift"></span>
+                <span>Gift Cards</span>
+            </div>
+
+
+             <div>
+                <span class="bi bi-question-circle"></span>
+                <span>Help Center</span>
+            </div>
+
+
+           <div>
+                <span></span>
+                <span>@ 2007 - 2026 Flipkart.com</span>
+            </div>
+
+
+            <div class="debit-cards">
+
+                <span class="bi bi-credit-card-2-front"></span>
+                <span class="bi bi-credit-card"></span>
+                <span class="bi bi-credit-card-fill"></span>
+                <span class="bi bi-credit-card-2-front-fill"></span>
+                <span class="bi bi-credit-card-2-back-fill"></span>
+               <span class="bi bi-credit-card-2-front"></span>
+                <span class="bi bi-credit-card"></span>
+                <span class="bi bi-credit-card-fill"></span>
+                <span class="bi bi-credit-card-2-front-fill"></span>
+                <span class="bi bi-credit-card-2-back-fill"></span>
+
+            </div>
+
+        </div>
+
+        
+        </section>
      </footer>
 </body>
 </html>
