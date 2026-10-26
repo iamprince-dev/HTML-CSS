@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <dl>
+
+        <dt>Search</dt>
+        <dd><input type="text" list="search-options" name="search"  autofocus>
+          <datalist id="search-options">
+            <option value="Apple">
+            <option value="Samsung">
+            <option value="Sony">
+            <option value="LG">
+            <option value="Dell">
+            <option value="HP">
+            <option value="Lenovo">
+            <option value="Asus">
+            <option value="Acer">
+            <option value="Microsoft">
+        </dd>
+        <dt>Name</dt>
+        <dd><input type="text" name="name" value="John Doe" readonly></dd>
+        <dt>Password</dt>
+        <dd><input type="password" name="password" required minlength="5" maxlength="10"></dd>
+        <dt>Email</dt>
+        <dd><input type="email" name="email" ></dd>
+        </dl>
+
+        submit
+        <button type="submit">Submit</button>
+
+
+    </form>
+    
+</body>
+</html>

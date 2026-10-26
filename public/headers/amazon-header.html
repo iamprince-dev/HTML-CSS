@@ -9,7 +9,7 @@
     <style>
         body{
             margin: 0px;
-            height: 1900px;
+         font-family: Arial;
         }
         header{
             display: flex;
@@ -115,18 +115,13 @@ section{
     margin-left: 12px;
 }
  section div{
-    height: 550px;
     width: 340px;
-    
-    border-radius: 20px;
-    
-    
+    border-radius: 20px;  
  }
  .card-1 img{
     width: 100%;
-    height: 100%;
+    height: 600px;
     border-radius: 20px;
-    background-size: cover;
     box-shadow:  0px 2px 2px rgb(152, 149, 149);
     
  }
@@ -149,14 +144,11 @@ section{
     padding-right: 200px;
     margin-top: 100px;
     padding-top: 100px;
-
-
  }
  .row-1 span{
     display: block;
     margin-bottom: 14px;
-    font-family: arial;
-    
+    font-family: arial; 
  }
  .row-1{
     font-size: 18px;
@@ -210,21 +202,16 @@ section{
         align-items: center;
         border-radius: 4px;
      } 
-     
-     
      .footer-1{
         display: grid;
         grid-template-columns: 3fr 3fr 3fr 3fr;
-
-
         padding-top: 50px;
         padding-bottom: 100px;
      }
      .footer-1 div{
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px
-        
+        margin-bottom: 20px  
      }
      .back-top {
     text-align: center;
@@ -235,7 +222,6 @@ section{
 .row-3{
   background-color: #21252a;
    padding-left: 200px;
-
 }
 .terms{
     padding-left: 450px;
@@ -246,30 +232,51 @@ section{
     font-size: 20px;
     color: rgb(232, 227, 227);
 }
-.electronics{
-    border: 1px solid grey;
-    width: 1800%;
-    height: 1000px;
-}
-
 .electronics-cards{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid grey;
-    margin-top: 20px;
-    width:200px;
-    height:200px;
+   width: 420px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding: 10px;
+    justify-content: center;  
 }
-.electronics-cards img{
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    background-size: cover;
-}
- .first-col{
+.first-card{
+    width: 180px;
+} 
+ .electronics{
     border: 1px solid grey;
- }    
+    width: 390px;
+   padding: 15px;
+ }  
 
+.electronics-cards img{
+    width: 170px;
+    border-radius: 15px;
+   margin-top: 5px;
+    
+}
+.electronics-title{  
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+.card-text{
+    font-size: 18px;
+    margin-top: 5px;
+}
+ .diffrent{
+    margin-top: 50px;
+ }
+ .card-text-1{
+    margin-bottom: 40px;
+ }
     </style>
 </head>
 <body>
@@ -327,7 +334,7 @@ section{
       <section class="top">
         <div class="card-1">
 
-            <img src="../images/kitchen-amaz.avif" alt="" width="100%" height="100%">
+            <img src="../images/kitchen-amaz.avif" alt="" >
 
                 <div class="text"> Shop kitchen <br>
                     must-haves</div>
@@ -337,7 +344,7 @@ section{
 
             <div class="card-1">
 
-            <img src="../images/beauty-amaz.avif" alt="" width="100%" height="100%">
+            <img src="../images/beauty-amaz.avif" alt="" >
 
                 <div class="text"> Shop all  <br>
                     things beauty</div>
@@ -349,7 +356,7 @@ section{
 
          <div class="card-1">
 
-            <img src="../images/sharp-amaz.avif" alt="" width="100%" height="100%">
+            <img src="../images/sharp-amaz.avif" alt="">
 
                 <div class="text"> Start looking <br>
                     sharp</div>
@@ -359,7 +366,7 @@ section{
 
          <div class="card-1">
 
-            <img src="../images/toy_ amaz.avif" alt="" width="100%" height="100%">
+            <img src="../images/toy_ amaz.avif" alt="" >
 
                 <div class="text"> Toys for little ones</div>
                 </div>
@@ -369,7 +376,7 @@ section{
 
            <div class="card-1">
 
-            <img src="../images/laptop-amaz.avif" alt="" width="100%" height="100%">
+            <img src="../images/laptop-amaz.avif" alt="" >
 
                 <div class="text"> Level up<br>
                    your PC here</div>
@@ -381,39 +388,300 @@ section{
        
       </section>
 
+        <section>
+               <div class="main-row">
 
-      <section>
-            
-              <div class="electronics">
+                <div class="electronics">
+                  
+                    <div class="electronics-title">
+                        <span>Plug in with our electronics</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
 
-                   <div class="first-col">
-
-                            <div class="electronics-title">
-                              electronicsPlug in with our electronics
-                              <span class="bi bi-chevron-right"></span>
-                            </div>
-
-                         <div class="electronics-cards">
+                     <div class="electronics-cards">
 
                             <div class="first-card">
                                <img src="../images/headphone.jpg" alt="">
-                                <span>Headphones</span>
+                                <div class="card-text-1">Headphones</div>
                            </div>
 
-                          <div class="col-1card1">
+                          <div class="first-card">
                                <img src="../images/speaker-amaz.jpg" alt="">
-                               <span>Speakers</span>
+                                <div class="card-text">Speakers</div>
                           </div>
 
+                            <div class="first-card">
+                               <img class="m" src="../images/gaming-amaz.jpg" alt="">
+                                <div class="card-text">Gaming</div>
+                           </div>
 
-                         </div>
+                          <div class="first-card">
+                               <img src="../images/tab-amaz.jpg" alt="">
+                                <div class="card-text">Tablets</div>
+                          </div>
 
-                   </div>
+                 </div>
+               
+             </div>
 
-              </div>
 
 
-      </section>
+
+                <div class="electronics">
+                  
+                    <div class="electronics-title">
+                       <span>Score the top PCs & Accessories</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+
+                     <div class="electronics-cards different">
+
+                            <div class="first-card">
+                               <img src="../images/desktop amaz.jpg" alt="">
+                                <div class="card-text">Desktop</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/laptop amaz2.jpg" alt="">
+                                <div class="card-text-1">Laptops</div>
+                          </div>
+
+                            <div class="first-card">
+                               <img src="../images/hard drive.jpg" alt="">
+                                <div class="card-text">Hard Drives</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/pc-acceseries.jpg" alt="">
+                                <div class="card-text">PC Accessories</div>
+                          </div>
+
+                 </div>
+               
+             </div>
+
+
+
+                <div class="electronics">
+                  
+                    <div class="electronics-title">
+                       <span> Plug in with our electronics</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+
+                     <div class="electronics-cards">
+
+                            <div class="first-card">
+                               <img src="../images/cloth-amaz.jpg" alt="">
+                                <div class="card-text">Cloths</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/watch-amz.jpg" alt="">
+                                <div class="card-text-1">Trackers</div>
+                          </div>
+
+                            <div class="first-card">
+                               <img src="../images/dumble.jpg" alt="">
+                                <div class="card-text">Equipment</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/deals-amaz.jpg" alt="">
+                                <div class="card-text">Deals</div>
+                          </div>
+
+                 </div>
+               
+             </div>
+
+
+
+                <div class="electronics">
+                  
+                    <div class="electronics-title">
+                        <span>Plug in with our electronics </span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+
+                     <div class="electronics-cards">
+
+                            <div class="first-card">
+                               <img src="../images/women-amaz.jpg" alt="">
+                                <div class="card-text">Women</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/men-amaz.jpg" alt="">
+                                <div class="card-text-1">Men</div>
+                          </div>
+
+                            <div class="first-card">
+                               <img src="../images/girls-amaz.jpg" alt="">
+                                <div class="card-text">Girls</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/boys-amaz.jpg" alt="">
+                                <div class="card-text">Boys</div>
+                          </div>
+
+                 </div>
+               
+             </div>
+
+           </div>  
+
+        </section>
+
+
+         <section>
+               <div class="main-row">
+
+                <div class="electronics">
+                  
+                    <div class="electronics-title">
+                        <span>Plug in with our electronics</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+
+                     <div class="electronics-cards">
+
+                            <div class="first-card">
+                               <img src="../images/headphone.jpg" alt="">
+                                <div class="card-text-1">Headphones</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/speaker-amaz.jpg" alt="">
+                                <div class="card-text">Speakers</div>
+                          </div>
+
+                            <div class="first-card">
+                               <img class="m" src="../images/gaming-amaz.jpg" alt="">
+                                <div class="card-text">Gaming</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/tab-amaz.jpg" alt="">
+                                <div class="card-text">Tablets</div>
+                          </div>
+
+                 </div>
+               
+             </div>
+
+
+
+
+                <div class="electronics">
+                  
+                    <div class="electronics-title">
+                       <span>Score the top PCs & Accessories</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+
+                     <div class="electronics-cards different">
+
+                            <div class="first-card">
+                               <img src="../images/desktop amaz.jpg" alt="">
+                                <div class="card-text">Desktop</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/laptop amaz2.jpg" alt="">
+                                <div class="card-text-1">Laptops</div>
+                          </div>
+
+                            <div class="first-card">
+                               <img src="../images/hard drive.jpg" alt="">
+                                <div class="card-text">Hard Drives</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/pc-acceseries.jpg" alt="">
+                                <div class="card-text">PC Accessories</div>
+                          </div>
+
+                 </div>
+               
+             </div>
+
+
+
+                <div class="electronics">
+                  
+                    <div class="electronics-title">
+                       <span> Plug in with our electronics</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+
+                     <div class="electronics-cards">
+
+                            <div class="first-card">
+                               <img src="../images/cloth-amaz.jpg" alt="">
+                                <div class="card-text">Cloths</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/watch-amz.jpg" alt="">
+                                <div class="card-text-1">Trackers</div>
+                          </div>
+
+                            <div class="first-card">
+                               <img src="../images/dumble.jpg" alt="">
+                                <div class="card-text">Equipment</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/deals-amaz.jpg" alt="">
+                                <div class="card-text">Deals</div>
+                          </div>
+
+                 </div>
+               
+             </div>
+
+
+
+                <div class="electronics">
+                  
+                    <div class="electronics-title">
+                        <span>Plug in with our electronics </span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+
+                     <div class="electronics-cards">
+
+                            <div class="first-card">
+                               <img src="../images/women-amaz.jpg" alt="">
+                                <div class="card-text">Women</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/men-amaz.jpg" alt="">
+                                <div class="card-text-1">Men</div>
+                          </div>
+
+                            <div class="first-card">
+                               <img src="../images/girls-amaz.jpg" alt="">
+                                <div class="card-text">Girls</div>
+                           </div>
+
+                          <div class="first-card">
+                               <img src="../images/boys-amaz.jpg" alt="">
+                                <div class="card-text">Boys</div>
+                          </div>
+
+                 </div>
+               
+             </div>
+
+           </div>  
+
+        </section>
+
+
 
       <footer>
                   <div class="back-top">
