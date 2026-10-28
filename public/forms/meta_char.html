@@ -8,7 +8,28 @@
 <body>
 
     <form>
-        Input: <input type="text" name="text"  pattern="\w{4,8}" placeholder="" >
+        Input: <input type="text" name="text"  pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^a-zA-Z0-9])[A-Za-z0-9\W_]{8,15}$" placeholder="" >
+       Date <input type="date" max="2026-11-05" min="2026-10-28"> <br>        <br>
+        <br><br>
+        <input type="datetime-local">
+        <br>
+                <br>
+        <br><br>
+        <input type="radio" value="male" name="gender" id optmal> <label for="optmal">Male</label> 
+        <input type="radio" value="female" name="gender" id="optfem"> <label for="">Femal</label>
+        <br>
+                <br>
+        <br><br>
+        <input type="color" value="#ff0000"> color
+        <br>
+        <br><br>
+
+        <input type="range" min="10.45" max="12.45" step=".01">
+
+        <br>
+        <br><br>
+        <input type="number" min="1" max="100" step="10"> 
+
         <button type="submit">Submit</button>
     </form>
     
