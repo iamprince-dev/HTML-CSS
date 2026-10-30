@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-family: arial;
+            
+        }
+
+        form {
+            width: 700px;
+            border: none;
+            padding: 10px;
+            background-color: rgb(253, 252, 252);
+            box-shadow: 3px 3px 2px rgb(180, 177, 177);
+        }
+
+        .logo img {
+            width: 85px;
+            margin-bottom: 15px;
+            margin-top: 5px;
+        }
+
+        .form-title {
+            font-size: 33px;
+            margin-bottom: 5px;
+        }
+
+        .form-subtitle {
+            font-size: 20px;
+        }
+
+        .form-label{
+            margin-bottom: 10px;
+            font-size: 20px;
+        
+            display: block;
+            font-weight: bold;
+
+        }
+
+        .form-control {
+            padding: 20px;
+            width: 93%;
+            border-radius: 15px;
+            font-size: 20px;
+            margin-bottom: 10px;
+            
+            
+        }
+        input{
+            border: 1px solid rgb(128, 126, 126);
+        }
+        .select-dob{
+            width: 100%;
+            display: flex;
+            flex-direction: rows;
+            justify-content: space-around;
+        }
+        select{
+            width: 200px;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 20px;
+            color:rgb(109, 109, 109) ;
+        }
+        .tips {
+            font-size: 20px;
+        }
+
+        .blue-text {
+            color: rgb(13, 123, 240);
+        }
+
+       .form-field{
+        margin-top: 20px;
+        
+       }
+       .form-field-month{
+        margin-top: 30px;
+       }
+       .bottom-text{
+        margin-top: 15px;
+        font-size: 19px;
+       }
+       .submit-button{
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: rgb(8, 102, 244);
+        color: white;
+        border-radius: 50px;
+        border: none;
+        font-size: 20px;
+       }
+       .already-account{
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+        background-color: rgb(236, 235, 235);
+        color: rgb(101, 98, 98);
+        border: none;
+        border-radius: 50px;
+        margin-bottom: 10px;
+       }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <div class="logo"><img src="../images/meta.png" alt="""></div>
+
+        <div class="form-title">Get started on Instagram with a Meta Account</div>
+        <div class="form-subtitle">A Meta Account lets you access multiple Meta technologies, like Instagram, easily and
+            securely.</div>
+
+        <div class="form-field">
+            <label  class="form-label" for="usernumber">Mobile number or email</label>
+            <div>
+                <input class="form-control" type="text" name="usernumber" placeholder="Mobile number or email">
+                <div class="tips">
+                    <span>You may receive notifications from us.</span>
+                    <span class="blue-text">learn why we ask for your contact <br>information</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label class="form-label" for="password">Password</label>
+            <div>
+                <input class="form-control" type="text" name="usernumber" placeholder="Password">
+
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label class="form-label" for="birthday">Birthday <span class="bi bi-question-circle"></span></label>
+            <div class="select-dob">
+               <span>
+                 <select id="month" name="month">
+                    <option value="" disabled selected>Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                   </select>
+
+               </span>
+
+               <span>
+                   <select id="day" name="day">
+                         <option value="" disabled selected> Day</option>
+                         <option value="Monday">Monday</option>
+                         <option value="Tuesday">Tuesday</option>
+                         <option value="Wednesday">Wednesday</option>
+                         <option value="Thursday">Thursday</option>
+                         <option value="Friday">Friday</option>
+                         <option value="Saturday">Saturday</option>
+                         <option value="Sunday">Sunday</option>
+                   </select>
+               </span>
+
+               <span>
+                  <select id="year" name="year">
+                     <option value="" disabled selected>Year</option>
+                     <option value="2026">2026</option>
+                     <option value="2025">2025</option>
+                     <option value="2024">2024</option>
+                     <option value="2023">2023</option>
+                     <option value="2022">2022</option>
+                     <option value="2021">2021</option>
+                     <option value="2020">2020</option>
+                     <option value="2019">2019</option>
+                     <option value="2018">2018</option>
+                     <option value="2017">2017</option>
+                     <option value="2016">2016</option>
+                     <option value="2015">2015</option>
+                     <option value="2014">2014</option>
+                     <option value="2013">2013</option>
+                     <option value="2012">2012</option>
+                     <option value="2011">2011</option>
+                     <option value="2010">2010</option>
+               </select>
+               </span>
+
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label class="form-label" for="name">Name</label>
+            <div>
+                <input class="form-control" type="text" name="name" placeholder="Full name">
+
+            </div>
+        </div>
+
+        <div class="form-field">
+            <label class="form-label" for="username">Username</label>
+            <div>
+                <input class="form-control" type="text" name="username" placeholder="Username">
+
+            </div>
+        </div>
+
+        <div class="bottom-text">
+            People who use our service may have uploaded your contact information to Instagram.<span
+                class="blue-text">Learn more.</span>
+        </div>
+
+        <div class="bottom-text">
+            By tapping Submit, you agree to create an account and to Instagram's<span class="blue-text">Terms, Privacy
+                Policy</span> and <span class="blue-text">Cookies Policy.</span>
+        </div>
+
+        <div class="bottom-text">
+            The<span class="blue-text">Privacy Policy</span> describes the ways we can use the information we collect
+            when you create an account. For example, we use this information to provide, personalize and improve our
+            products, including ads.
+        </div>
+
+          
+          <button class="submit-button">Submit</button>
+          
+
+          
+          <button class="already-account"> I already have an account</button>
+
+          
+
+
+    </form>
+
+</body>
+
+</html>
