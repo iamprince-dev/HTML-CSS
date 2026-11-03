@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #UserName+div{
+            display: none;
+        }
+        #UserName:focus+div{
+            display: block;
+            color: red;
+            font-size: 15px;
+        }
+        #Submit{
+            border: none;
+            background-color: rgb(147, 240, 158);
+            padding: 15px;
+            border-radius: 20px;   
+        }
+        #Submit:hover{
+            background-color: rgb(49, 196, 49);
+            cursor: grab;
+        }
+        #UserName:read-only{
+            background-color: rgb(240, 217, 111);
+            cursor: not-allowed;
+            padding: 10px;
+        }
+        #terms+label{
+            color: red;
+        }
+        #terms:checked+label{
+            color: green;
+        }
+        #terms~button{
+            display: none;
+        }
+        #terms:checked~button{
+            display: block;
+        }
+        dl{
+            width: 500px;
+            background-color: rgb(247, 187, 113);
+        }
+        dd{
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <dl>
+        <dt>username</dt>
+        <dd>
+            <input type="text" readonly placeholder="Name in block letter only" id="UserName" value="John">
+            <div>Name in block letter only</div>
+        </dd>
+        <dt>Terms of services</dt>
+        <dd>
+            <textarea disabled rows="4"
+                cols="40">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nisi reprehenderit inventore quas cum modi iure rerum soluta aut magni maxime veniam quibusdam voluptas explicabo laudantium libero quae laboriosam ipsa quod distinctio. Voluptatibus error laudantium quidem molestias mollitia ab, quasi dolorum distinctio sequi, officiis iste exercitationem fugiat ducimus. Aliquid non, adipisci unde dicta commodi odit cum repellendus sunt est nobis nulla recusandae mollitia voluptatibus consectetur esse voluptas quasi eos reiciendis ratione quas fuga dolorum qui dolores? Aut eveniet enim ipsam ea sint, rem tempore. Consequuntur similique sapiente unde blanditiis aliquam incidunt adipisci accusantium ratione dignissimos provident eaque voluptate, facere temporibus.</textarea>
+        </dd>
+
+        <dd>
+            <input type="checkbox" id="terms"><label> I Accept </label>
+            <br> <br>
+            <button id="Submit">Submit</button>
+
+        </dd>
+
+    </dl>
+
+</body>
+
+</html>
