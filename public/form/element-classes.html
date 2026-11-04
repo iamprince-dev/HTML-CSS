@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            font-size: 20px;
+
+        }
+
+        li::after {
+            content: ">";
+            padding-left: 10px;
+            padding-right: 10px;
+            color: gray;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+
+        li:last-child::after {
+            content: none;
+        }
+
+        li:last-child {
+            color: green;
+        }
+
+        input::placeholder {
+            font-size: 15px;
+            color: gray;
+
+        }
+        p::selection{
+            background-color: yellow;
+        }
+        *{
+            font-family: arial;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <input type="text" placeholder="Search Amazon.in">
+    <ul>
+        <li>Home</li>
+        <li>Electronics</li>
+        <li>Mobiles & Accessories</li>
+        <li>Apple Phones</li>
+        <li>Iphone-18</li>
+    </ul>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti recusandae vero iure quas est ratione iste
+        aspernatur aut assumenda nemo dicta ea molestias nam, veritatis rerum voluptate repellendus quis tempora?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium enim porro temporibus et provident cum
+        natus recusandae expedita ea neque asperiores id voluptas, ratione ex! Earum dolorum eum ea sint?
+    </p>
+</body>
+
+</html>
