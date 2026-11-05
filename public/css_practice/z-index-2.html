@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            border: 1px solid gray;
+            padding: 20px;
+            font-size: 20px;
+            background-color: rgb(231, 43, 149);
+            font-family: arial;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: baseline;
+            align-items: center;
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        @media screen and (min-width:541px){
+            .bi-justify{
+                display: none;
+            }
+            nav{
+                margin-left: 20px;
+            }
+            nav span{
+                margin-right: 20px;
+            }
+            article{
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+
+            }
+        }
+        @media screen and (max-width:540px){
+            .bi-justify{
+                display: inline;
+            }
+            nav{
+                display: none;
+            }
+            header{
+                display: flex;
+                justify-content: space-between;
+            }
+            article{
+                display: grid;
+                grid-template-columns: 12fr;
+            }
+            article div{
+                margin-bottom: 20px;
+            }
+            section{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .men{
+            
+            width: 400px;
+            height: 400px;
+            background-image: url("../../public/images/men2.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-item: center;
+    
+        }
+        .women{
+            
+            width: 400px;
+            height: 400px;
+            background-image: url("../../public/images/women.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
+        .kids{
+            
+            width: 400px;
+            height: 400px;
+            background-image: url("../../public/images/kids.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+    
+            
+    
+        }
+        article div{
+            font-size: 20px;
+            border: none;
+            padding: 10px;
+            width: 200px;
+            color: white;
+        }
+        section{
+            margin:20px;
+        }
+        .button{
+            border: none;
+            color: rgb(7, 7, 7);
+            font-size: 17px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="bi bi-justify"></button>
+
+        <div class="logo">Amazon</div>
+        <nav>
+            <span>Home</span>
+            <span>About</span>
+            <span>Shop</span>
+            <span>Bussines</span>
+            <span>Offers</span>
+        </nav>
+    </header>
+
+    <section>
+        <article>
+            <div class="men">
+                <div class="button">Mens Fashin</div>
+            </div>
+
+            <div class="women">
+                <div class="button">Women Fashin</div>
+            </div>
+
+            <div class="kids">
+                <div class="button">Kids Fashin</div>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
