@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            padding-top: 50px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .card-1{
+            width: 350px;
+            height: 400px;
+            background-image: url(../images/latest1.avif);
+            border: 1px solid gray;
+            background-size: cover;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: end;
+            padding-bottom: 50px;
+        }
+        .card-1{
+            transform: scale(1);
+            transition-duration: 500ms;
+        }
+        .card-1:hover{
+            transform: scale(1.05);
+            transition-duration: 500ms;
+        }
+        .card-2{
+            background-image: url(../images/latest2.avif);
+            background-size: cover;
+            width: 350px;
+            height: 400px;
+            border: 1px solid gray;
+           display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: end;
+            padding-bottom: 50px;
+        }
+        .card-2{
+            transform: scale(1);
+            transition-duration: 500ms;
+        }
+        .card-2:hover{
+            transform: scale(1.05);
+            transition-duration: 500ms;
+        }
+        .card-3{
+            width: 350px;
+            height: 400px;
+            background-image: url(../images/latest3.avif);
+            border: 1px solid gray;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: end;
+            padding-bottom: 50px;
+        }
+        .card-3{
+            transform: scale(1);
+            transition-duration: 500ms;
+        }
+        .card-3:hover{
+            transform: scale(1.05);
+            transition-duration: 500ms;
+        }
+        .card-4{
+            width: 350px;
+            height: 400px;
+            background-image: url(../images/latest4.avif);
+            border: 1px solid gray;
+            background-size: cover;
+           display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: end;
+            padding-bottom: 50px;
+        }
+         .card-4{
+            transform: scale(1);
+            transition-duration: 500ms;
+        }
+        .card-4:hover{
+            transform: scale(1.05);
+            transition-duration: 500ms;
+        }
+        .button{
+            display: none;
+        }
+        .card-1:hover .button{
+             padding: 10px;
+            background-color:white;
+            width: 130px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 23px;
+            
+            align-items: center;
+        }
+         .card-2:hover .button{
+             padding: 10px;
+            background-color:white;
+            width: 130px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 23px;
+            align-items: center;
+        }
+        .card-3:hover .button{
+             padding: 10px;
+            background-color:white;
+            width: 130px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 23px;  
+            align-items: center;
+        }
+        .card-4:hover .button{
+             padding: 10px;
+            background-color:white;
+            width: 130px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 23px;          
+            align-items: center;
+        }
+        .name{
+            text-align: center;
+            font-size: 22px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .cut-rate{
+            text-align: center;
+            font-size: 22px;
+            text-decoration: line-through;
+            color: goldenrod;
+        }
+        .rate{
+            font-size: 22px;
+            text-align: center;
+        }
+        .title{
+            font-size: 35px;
+            font-weight: bold;
+            padding-top: 50px;
+            padding-left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        Trending This Week
+    </div>
+    <section>
+
+    <div>
+    <div class="card-1">
+        <div class="button">
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-heart"> </span>
+            <span class="bi bi-search"></span>
+        </div>
+        
+    </div>
+    <div class="name">Cashmere Tank + Bag</div>
+    <div class="rate">
+        <span>$98.00</span>
+        <span class="cut-rate">$120.00</span>
+    </div>
+    </div>
+     <div>
+    <div class="card-2">
+        <div class="button">
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-heart"> </span>
+            <span class="bi bi-search"></span>
+        </div>
+    </div>
+    <div class="name">Cashmere Tank + Bag</div>
+    <div class="rate">
+        <span>$98.00</span>
+        <span class="cut-rate">$120.00</span>
+    </div>
+    </div>
+    <div>
+    <div class="card-3">
+        <div class="button">
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-heart"> </span>
+            <span class="bi bi-search"></span>
+        </div>
+    </div>
+    <div class="name">Cashmere Tank + Bag</div>
+    <div class="rate">
+        <span>$98.00</span>
+        <span class="cut-rate">$120.00</span>
+    </div>
+    </div>
+    <div>
+    <div class="card-4">
+        <div class="button">
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-heart"> </span>
+            <span class="bi bi-search"></span>
+        </div>     
+    </div>
+    <div class="name">Cashmere Tank + Bag</div>
+    <div class="rate">
+        <span>$98.00</span>
+        <span class="cut-rate">$120.00</span>
+    </div>
+    </div>
+    
+    </section>
+</body>
+</html>
