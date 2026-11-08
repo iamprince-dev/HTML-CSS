@@ -42,7 +42,7 @@
               color: white; 
         }
         .img-1:hover div{
-            transform:translateY(-20px) ;
+            transform:translateY(-50px) ;
             transition-duration:700ms;
             
         }
@@ -58,7 +58,7 @@
         }
         .img-1:hover .shop-now{
             opacity: 1;
-            transform:translateY(-20px) ;
+            transform:translateY(-50px) ;
             transition-duration:700ms;
         }
         header{
@@ -74,6 +74,15 @@
             left: 0px;
             right: 0px;
             background-color: white;
+        }
+        .bi-cart:hover{
+            color: red;
+        }
+        .bi-search:hover{
+            color: red;
+        }
+        .bi-person-circle:hover{
+            color: red;
         }
         .icon{
             display: flex;
@@ -115,8 +124,8 @@
         }
         .card-1{
             width: 350px;
-            height: 400px;
-            background-image: url(../images/latest1.avif);
+            height: 450px;
+            position: relative;
             border: 1px solid gray;
             background-size: cover;
             overflow: hidden;
@@ -124,114 +133,144 @@
             flex-direction: row;
             justify-content: center;
             align-items: end;
-            padding-bottom: 50px;
+            
         }
-        .card-1{
+        .card-1 img{
             transform: scale(1);
             transition-duration: 500ms;
         }
-        .card-1:hover{
+        .card-1:hover img{
             transform: scale(1.05);
             transition-duration: 500ms;
         }
         .card-2{
-            background-image: url(../images/latest2.avif);
+            position: relative;
             background-size: cover;
             width: 350px;
-            height: 400px;
+            height: 450px;
             border: 1px solid gray;
            display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: end;
-            padding-bottom: 50px;
+            overflow: hidden;
+
         }
-        .card-2{
+        .card-2 img{
             transform: scale(1);
             transition-duration: 500ms;
         }
-        .card-2:hover{
+        .card-2:hover img{
             transform: scale(1.05);
             transition-duration: 500ms;
         }
         .card-3{
             width: 350px;
-            height: 400px;
-            background-image: url(../images/latest3.avif);
+            height: 450px;
+            position: relative;
             border: 1px solid gray;
             background-size: cover;
             display: flex;
+            overflow: hidden;
             flex-direction: row;
             justify-content: center;
             align-items: end;
-            padding-bottom: 50px;
         }
-        .card-3{
+        .card-3 img{
             transform: scale(1);
             transition-duration: 500ms;
         }
-        .card-3:hover{
+        .card-3:hover img{
             transform: scale(1.05);
             transition-duration: 500ms;
         }
         .card-4{
             width: 350px;
-            height: 400px;
-            background-image: url(../images/latest4.avif);
+            height: 450px;
+            position: relative;
             border: 1px solid gray;
             background-size: cover;
            display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: end;
-            padding-bottom: 50px;
+            overflow: hidden;
         }
-         .card-4{
+         .card-4 img{
             transform: scale(1);
             transition-duration: 500ms;
         }
-        .card-4:hover{
+        .card-4:hover img{
             transform: scale(1.05);
             transition-duration: 500ms;
         }
         .button{
             display: none;
+            position: absolute;
+            bottom: 50px;
         }
         .card-1:hover .button{
-             padding: 10px;
-            background-color:white;
-            width: 130px;
+            background-color:white;         
             display: flex;
             justify-content: space-between;
-            font-size: 23px;
-            
+            font-size: 25px;
             align-items: center;
         }
+        .card-1:hover .bi-heart{
+            padding: 15px;
+        }
+        .card-1:hover .bi-zoom-in{
+            padding: 15px;
+        }
+        .card-1:hover .bi-cart3{
+            padding: 15px;
+        }
+        .card-2:hover .bi-heart{
+            padding: 15px;
+        }
+        .card-2:hover .bi-zoom-in{
+            padding: 15px;
+        }
+        .card-2:hover .bi-cart3{
+            padding: 15px;
+        }
+        .card-3:hover .bi-heart{
+            padding: 15px;
+        }
+        .card-3:hover .bi-zoom-in{
+            padding: 15px;
+        }
+        .card-3:hover .bi-cart3{
+            padding: 15px;
+        }
+        .card-4:hover .bi-heart{
+            padding: 15px;
+        }
+        .card-4:hover .bi-zoom-in{
+            padding: 15px;
+        }
+        .card-4:hover .bi-cart3{
+            padding: 15px;
+        }
          .card-2:hover .button{
-             padding: 10px;
             background-color:white;
-            width: 130px;
             display: flex;
             justify-content: space-between;
-            font-size: 23px;
+            font-size: 25px;
             align-items: center;
         }
         .card-3:hover .button{
-             padding: 10px;
             background-color:white;
-            width: 130px;
             display: flex;
             justify-content: space-between;
-            font-size: 23px;  
+            font-size: 25px;  
             align-items: center;
         }
         .card-4:hover .button{
-             padding: 10px;
             background-color:white;
-            width: 130px;
             display: flex;
             justify-content: space-between;
-            font-size: 23px;          
+            font-size: 25px;          
             align-items: center;
         }
         .name{
@@ -258,6 +297,7 @@
         }
         .sec-2{
             margin-top: 100px;
+            margin-bottom: 100px;
         }
         .top-men{
             height: 800px;
@@ -283,7 +323,7 @@
          
         }
         .describe{
-            color: rgb(23, 20, 20);
+            color: rgb(49, 48, 48);
             margin-bottom: 35px;
             font-size: 19px;
 
@@ -296,6 +336,18 @@
          width: 160px;
          text-align: center;
          margin-left: 340px;
+        }
+        .bi-cart3:hover{
+            color: white;
+            background-color: red;
+        }
+        .bi-zoom-in:hover{
+            color: white;
+            background-color: red;
+        }
+        .bi-heart:hover{
+            color: white;
+            background-color: red;
         }
 
     </style>
@@ -372,10 +424,11 @@
       <div class="main-2">        
     <div>
     <div class="card-1">
+        <img src="../images/latest1.avif" alt="">
         <div class="button">
-            <span class="bi bi-cart"></span>
+            <span class="bi bi-cart3"></span>
             <span class="bi bi-heart"> </span>
-            <span class="bi bi-search"></span>
+            <span class="bi bi-zoom-in"></span>
         </div>
         
     </div>
@@ -387,10 +440,11 @@
     </div>
      <div>
     <div class="card-2">
+        <img src="../images/latest2.avif" alt="">
         <div class="button">
-            <span class="bi bi-cart"></span>
+            <span class="bi bi-cart3"></span>
             <span class="bi bi-heart"> </span>
-            <span class="bi bi-search"></span>
+            <span class="bi bi-zoom-in"></span>
         </div>
     </div>
     <div class="name">Cashmere Tank + Bag</div>
@@ -401,10 +455,11 @@
     </div>
     <div>
     <div class="card-3">
+        <img src="../images/latest3.avif" alt="">
         <div class="button">
-            <span class="bi bi-cart"></span>
+            <span class="bi bi-cart3"></span>
             <span class="bi bi-heart"> </span>
-            <span class="bi bi-search"></span>
+            <span class="bi bi-zoom-in"></span>
         </div>
     </div>
     <div class="name">Cashmere Tank + Bag</div>
@@ -415,10 +470,11 @@
     </div>
     <div>
     <div class="card-4">
+        <img src="../images/latest4.avif" alt="">
         <div class="button">
-            <span class="bi bi-cart"></span>
+            <span class="bi bi-cart3"></span>
             <span class="bi bi-heart"> </span>
-            <span class="bi bi-search"></span>
+            <span class="bi bi-zoom-in"></span>
         </div>     
     </div>
     <div class="name">Cashmere Tank + Bag</div>
