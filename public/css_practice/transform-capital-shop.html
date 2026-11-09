@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <style>
         body{
             font-family: arial;
@@ -323,7 +325,7 @@
          
         }
         .describe{
-            color: rgb(49, 48, 48);
+            color: rgb(26, 24, 24);
             margin-bottom: 35px;
             font-size: 19px;
 
@@ -349,7 +351,55 @@
             color: white;
             background-color: red;
         }
-
+         footer{
+            display: grid;
+            grid-template-columns: repeat( 5,1fr);
+            margin-top: 20px;
+            background-color: rgb(14, 13, 13);
+            color: gray;
+            border-top: 1px solid gray;
+            padding-top: 100px;
+            font-size: 18px;
+            padding-left: 100px;
+            padding-bottom: 150px;
+            
+        }
+        .col-1{
+            display: flex;
+            flex-direction: column;
+        }
+        .col-2{
+            display: flex;
+            flex-direction: column;
+        }
+        .col-3{
+            display: flex;
+            flex-direction: column;
+        }
+        .col-4{
+            display: flex;
+            flex-direction: column;
+        }
+        .highlight{
+            font-size: 25px;
+            color:white;
+            padding-bottom: 20px;
+        }
+        .col-1 span{
+            margin-bottom: 15px;
+        }
+        .col-2 span{
+            margin-bottom: 15px;
+        }
+        .col-3 span{
+            margin-bottom: 15px;
+        }
+        .col-4 span{
+            margin-bottom: 15px;
+        }
+        .capital{
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -485,6 +535,41 @@
     </div>
    </div> 
     </section>
-    
+      <footer>
+          <div class="brand">
+            <span class="bi bi-shop"></span>
+            <span class="brand-name"><span class="capital">Capital</span> Shop</span>
+        </div>
+        <div class="col-1">
+            <span class="highlight">Shop men</span>
+            <span>Clothing Fashion</span>
+            <span>Winter</span>
+            <span>Formal</span>
+            <span>Casual</span>
+        </div>
+        <div class="col-2">
+            <span class="highlight">Shop Women</span>
+            <span>Clothing Fashion</span>
+            <span>Winter</span>
+            <span>Formal</span>
+            <span>Casual</span>
+        </div>
+        <div class="col-3">
+            <span class="highlight">Baby Collection</span>
+            <span>Clothing Fashion</span>
+            <span>Winter</span>
+            <span>Formal</span>
+            <span>Casual</span>
+        </div>
+        <div class="col-4">
+            <span class="highlight">Quick Links</span>
+            <span>Track Your Order</span>
+            <span>Support</span>
+            <span>FAQ</span>
+            <span>About</span>
+            <span>Contact Us</span>
+        </div>
+
+     </footer>
 </body>
 </html>
