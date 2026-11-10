@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+</head>
+<body class="d-flex justify-content-center p-4 ">
+
+    <form class="border border-2 border-dark p-2 rounded-2 w-25 bg-black text-white">
+        <div class="fs-2 text-center fw-bold bi-person-fill">User Login</div>
+        <div class="mb-3">
+            <label class="form-label fw-bold" for="name">Name</label>
+            <div>
+                <input class="form-control" type="text" id="name">
+            </div>
+        </div>
+
+         <div class="mb-3">
+            <label class="form-label fw-bold" for="price">Price</label>
+            <div>
+                <input class="form-control" type="number" id="price">
+            </div>
+        </div>
+
+         <div class="mb-3">
+            <label class="form-label fw-bold" for="rating">Rating</label>
+            <div>
+                <input class="form-range" value="1" min="1" max="5" type="range" id="rating">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-bold" for="category">Category</label>
+        <div>
+            <select name="category" class="form-select" id="category" >
+            <option>TV</option>
+            <option>Mobile</option>
+            <option>Gaming</option>
+            </select>
+        </div>
+        </div>
+        
+
+            <div class="mt-3">
+                  <label class="form-label fw-bold" for="stock">Stock</label>
+                  <div class="form-switch">
+                    <input type="checkbox" class="form-check-input" id="stock"><label class="form-check-label" for="">Avlaible </label>
+                  </div>
+            </div>
+
+        </div> 
+        <div class="mt-3 mb-2"> <button class="btn btn-warning w-100">Register</button></div>
+    </form>
+    
+</body>
+</html>
