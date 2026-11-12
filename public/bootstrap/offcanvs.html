@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    
+    <header class="d-flex justify-content-between p-4 m-5">
+        <button class="btn btn-secondary " data-bs-toggle="offcanvas" data-bs-target="#shop"> <span class="bi bi-justify"></span></button>
+        <button class=" btn btn-dark" data-bs-toggle="offcanvas" data-bs-target="#items"><span class="bi bi-cart"></span></button>
+    </header>
+    <div class="offcanvas offcanvas-start" id="shop">
+        <div class="offcanvas-header">
+            <h2>Online Shoping</h2>
+            <button class="btn btn-close btn-dark" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-danger p-3"><span class="bi bi-house-door"></span>Home</li>
+                <li class="list-group-item list-group-item-success my-3 p-3"><span class="bi bi-"></span>Offer</li>
+                <li class="list-group-item list-group-item-primary p-3"><span class="bi bi-heart"> Wihslist</span></li>
+                <li class="list-group-item list-group-item-warning my-3 p-3"><span class="bi bi-gear">Setting</span></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" id="items">
+        <div class="offcanvas-header">
+            <h2>Items List</h2>
+            <button class="btn btn-close " data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group">
+                <li class="list-group-item my-3">Item 1</li>
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item my-3">Item 1</li>
+                <li class="list-group-item">Item 1</li>
+            </ul>
+        </div>
+        <button class="btn btn-primary" data-bs-dismiss="offcanvas">Order</button>
+    </div>
+</body>
+</html>
