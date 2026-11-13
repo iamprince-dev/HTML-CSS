@@ -1,0 +1,1 @@
+Fonts used in this design: \r\n\r\nThird party Fonts: \r\n\r\nFont: Poppins \r\nAuthor: Indian Type Foundry,Jonny Pinhorn \r\nUrl: https://fonts.google.com/specimen/Poppins \r\n\r\nFont: Rubik Mono One \r\nAuthor: Hubert and Fischer \r\nUrl: https://fonts.google.com/specimen/Rubik+Mono+One \r\n\r\n
