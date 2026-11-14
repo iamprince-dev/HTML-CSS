@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="p-3">
+    
+    <ul class="nav nav-tabs w-50">
+        <li class="nav-item"><a href="#login" data-bs-toggle="tab" class="nav-link active">Login</a>  </li>
+        <li class="nav-item"><a href="#register" data-bs-toggle="tab" class="nav-link">Register</a> </li>
+    </ul>
+    <div class="tab-content p-4 mt-3 w-50">
+        <div class="tab-pane active" id="login">
+            <dl>
+                <dt>UserName</dt>
+                <dd><input type="text" class="form-control"></dd>
+                <dt>Password</dt>
+                <dd><input type="pasword" class="form-control"></dd>
+            </dl>
+            <button class="btn btn-primary">Login</button>
+        </div>
+
+
+        <div class="tab-pane " id="register">
+            <dl>
+                <dt>User Name</dt>
+                <dd><input type="text" class="form-control"></dd>
+                <dt>Password</dt>
+                <dd><input type="pasword" class="form-control"></dd>
+                <dt>Email</dt>
+                <dd><input type="email" class="form-control"></dd>
+                 <dt>Number</dt>
+                <dd><input type="text" class="form-control"></dd>
+
+            </dl>
+            <button class="btn btn-primary">Register</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -9,18 +9,18 @@
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
 <body>
-    <div class="carousel slide  " data-bs-theme="dark" data-bs-ride="carousel" id="slide ">
+    <div class="carousel slide " data-bs-ride="carousel" id="slide" data-bs-theme="dark">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="1000">
                 <img src="../images/banner-1.jpg" height="500px" alt="" class="w-100 ">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="1000">
                 <img src="../images/banner-4.jpg" height="500px" alt="" class="w-100">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="5000">
                 <img src="../images/ban-2.jpg" height="500px" alt="" class="w-100">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="1000">
                 <img src="../images/ban-3.jpg" height="500px" alt="" class="w-100">
             </div>
         </div>
@@ -30,11 +30,11 @@
         <button data-bs-slide="next" data-bs-target="#slide" class="carousel-control-next">
             <span class="carousel-control-next-icon"></span>
         </button>
-        <div class="carousel-indicators">
-            <button data-bs-target="#slide" class="active" data-bs-slide-to="0"></button>
-            <button data-bs-target="#slide" data-bs-slide-to="1"></button>
-            <button data-bs-target="#slide" data-bs-slide-to="2"></button>
-            <button data-bs-target="#slide" data-bs-slide-to="3"></button>
+        <div class="carousel-indicators ">
+            <button style="width: 20px; height: 20px; border-radius: 100%;" data-bs-target="#slide" class="active" data-bs-slide-to="0">1</button>
+            <button style="width: 20px; height: 20px; border-radius: 100%;" data-bs-target="#slide" data-bs-slide-to="1">2</button>
+            <button style="width: 20px; height: 20px; border-radius: 100%;" data-bs-target="#slide" data-bs-slide-to="2">3</button>
+            <button style="width: 20px; height: 20px; border-radius: 100%;" data-bs-target="#slide" data-bs-slide-to="3">4</button>
         </div>
     </div>
 </body>
