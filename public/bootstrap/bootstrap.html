@@ -9,25 +9,30 @@
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="">
-                <img src="../images/Bootstrap.png" width="50px" height="50px" alt="">
+    <nav class="navbar navbar-expand-lg px-lg-5 fs-5 py-4 ">
+        <div class="container-fluid" >
+            <a class="navbar-brand ms-5 ps-5 fs-5 fw-bold" href="">
+                <img src="../images/bootstrap-logo.svg" width="60px" height="60px" alt="" class="">
+                <span class="ps-2">Start Bootstrap</span>
             </a>
-            <button class=" navbar-toggler" data-bs-toggle="collapse" type="button" data-bs-target="#navbarcol"> 
+            <button class=" navbar-toggler" data-bs-toggle="collapse" type="button" data-bs-target="#navbar"> 
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar navbar-collapse" id="navbarcol">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-50  d-flex justify-content-between ">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Themes
                        </a>
                        <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item " href="#" ><span class="bi bi-brush pe-2"></span>Browse All Themes</a></li>
+                      <li><a class="dropdown-item" href="#"> <span class="bi bi-list-check pe-2"></span>Pro Bootsrap Themes</a></li>
+                      <div class="text-danger">Theme Categories</div>
+                      <li><a class="dropdown-item" href="#">Admin & Dashboard</a></li>
+                      <li><a class="dropdown-item" href="#">Landing Pages</a></li>
+                      <li><a class="dropdown-item" href="#">Business & Corporate</a></li>
+                      <li><a class="dropdown-item" href="#">Porfolio & Resume</a></li>
+                      <li><a class="dropdown-item" href="#">Blogs</a></li>
                       </ul>
                     </li>
 
@@ -36,10 +41,14 @@
                         Templates
                        </a>
                        <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#"><span class="bi bi-rocket"></span> Browse All templates</a></li>
+                      <div class="text-primary">Template Categories:</div>
+                      <li><a class="dropdown-item" href="#">Admin & Dashboard</a></li>
+                      <li><a class="dropdown-item" href="#">Landing Pages & Headers</a></li>
+                      <li><a class="dropdown-item" href="#">General Page layouts </a></li>
+                      <li><a class="dropdown-item" href="#">Navigation Layouts</a></li>
+                      <li><a class="dropdown-item" href="#">Ecommerce </a></li>
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
                       </ul>
                     </li>
 
@@ -48,10 +57,8 @@
                         bundles
                        </a>
                        <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#"><span class="bi bi-bootstrap"></span>Pro Bootstrap HTML Bundles</a></li>
+                      <li><a class="dropdown-item" href="#">Pro Angular bundles</a></li>
                       </ul>
                     </li>
                     <li class="nav-item">
@@ -63,14 +70,21 @@
                         Resources
                        </a>
                        <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <div class="text-danger">Resources</div>
+                      <li><a class="dropdown-item" href="#">Snippets</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#"><span class="bi bi-question-circle"></span>Knowledge base</a></li>
+                     <li><a class="dropdown-item" href="#"><span class="bi bi-list-check"></span>Bootstrap Resources List</a></li>
+                     <li><a class="dropdown-item" href="#">Giudes</a></li>
+                     <div class="text-danger">Tools & Pluges</div>
+                     <li><a class="dropdown-item" href="#">Sb Angluar inspector</a></li>
+                     <li><a class="dropdown-item" href="#">SB Form Builder</a></li>
+
                       </ul>
                     </li>
+                  
                 </ul>
-                <button class="btn ">Blog</button>
+                  <button class="btn ">Blog</button>
                 <button class="btn btn-danger">Login</button>
             </div>
         </div>
